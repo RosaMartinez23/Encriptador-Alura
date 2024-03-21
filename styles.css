@@ -1,0 +1,66 @@
+body {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3e9f1;
+}
+h1{
+    text-align: center;
+    
+}
+.container {
+    width: 99%;
+    max-width: 700px;
+    background: #fff0f6;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(255, 105, 180, .3);
+    border-radius: 15px;
+    border: 2px dashed #ff69b4;
+}
+
+textarea {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 2px solid #ff69b4;
+    background-color: #fffaf0;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    box-shadow: inset 0 2px 5px rgba(255, 105, 180, .2);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff69b4;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(255, 105, 180, .5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #ff85b4;
+    box-shadow: 0 8px 15px rgba(255, 105, 180, .6);
+}
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 5px rgba(255, 105, 180, .5);
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+label {
+    color: #ff69b4;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
