@@ -14,18 +14,18 @@ function decrypt(text) {
                .replace(/ufat/g, 'u');
 }
 
-document.getElementById('encryptButton').addEventListener('click', function() {
-    const inputText = document.getElementById('inputText').value;
-    document.getElementById('outputText').value = encrypt(inputText);
+document.getElementById('encriptar').addEventListener('click', function() {
+    const inputText = document.getElementById('valorTexto').value;
+    document.getElementById('resultadoTexto').value = encrypt(inputText);
 });
 
-document.getElementById('decryptButton').addEventListener('click', function() {
-    const inputText = document.getElementById('inputText').value;
-    document.getElementById('outputText').value = decrypt(inputText);
+document.getElementById('desencriptar').addEventListener('click', function() {
+    const inputText = document.getElementById('valorTexto').value;
+    document.getElementById('resultadoTexto').value = decrypt(inputText);
 });
 
-document.getElementById('copyButton').addEventListener('click', function() {
-    const outputText = document.getElementById('outputText');
+document.getElementById('copiar').addEventListener('click', function() {
+    const outputText = document.getElementById('resultadoTexto');
     outputText.select();
     document.execCommand('copy');
 });
